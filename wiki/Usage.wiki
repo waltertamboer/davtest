@@ -1,5 +1,9 @@
 #summary Usage of DAVTest
 
+= Requirements =
+ * PERL 5.x
+ * HTTP::DAV
+
 = Examples =
 Test file uploads at this location:
  * `davtest.pl -url http://localhost/davdir`
