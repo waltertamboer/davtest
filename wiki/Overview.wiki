@@ -1,5 +1,3 @@
-#Overview of DAVTest
-
 = Overview =
 
 DAVTest tests WebDAV enabled servers by uploading test executable files, and then (optionally) uploading files which allow for command execution or other actions directly on the target. 
